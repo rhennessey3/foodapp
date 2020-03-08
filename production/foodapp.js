@@ -84,6 +84,7 @@ function getUserRecipeSearchResults(query, maxResults = 6) {
         .catch(err => {
             $('#js-error-message').text(`Something went wrong: ${err.message}`);
         });
+    // let recipeinfo = {responseJson}
 }
 
 function displayResults(obj) {
@@ -99,7 +100,7 @@ function displayResults(obj) {
         )
     };
     $('#hidden-results').removeClass('hidden');
-    $('#home-con-toggle').toggleClass('none');
+    // $('#home-con-toggle').removeClass('home-con');
 };
 
 

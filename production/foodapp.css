@@ -26,22 +26,33 @@ div {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
+  background-color: #F6F4EE;
 }
 
 h1 {
   font-family: Brandon bld;
   font-size: 36px;
+  color: #433A3A
 }
 
 h3 {
   font-family: Gotham Medium;
   font-size: 16px;
   line-height: auto;
+   color: #BD9492;
+}
+
+h4{
+  font-family: Gotham Medium;
+  font-size: 12px;
+  line-height: auto;
+  color: #433A3A;
 }
 
 li {
   font-family: brandon reg;
   font-size:16px;
+  color:#645B5B;
 }
 
 span {
@@ -53,6 +64,7 @@ span {
 p{
   font-family: brandon reg;
   font-size:16px;
+  color:#8E8585;
 }
 /* Headers */
 
@@ -64,7 +76,7 @@ p{
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: gray;
+  background:#FFFFFF;
   color: black;
   font-size: 16px;
 }
@@ -90,8 +102,10 @@ button svg {
 .searchTerm {
   width: 100%;
   border-right: none;
+  
   padding: 0 20px;
   height: 26px;
+  border:1px solid white;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: black;
@@ -117,7 +131,7 @@ button svg {
   align-items: center;
   width: 100%;
   padding: 40px 39px;
-  background: gray;
+  background:#FFFFFF;
   color: black;
 }
 
@@ -181,7 +195,7 @@ ul li {
   margin: 5px;
   height: 40px;
   padding: 14px;
-  background: rgba(218, 218, 218, 0.29);
+  /* background: rgba(218, 218, 218, 0.29); */
 }
 
 /* Directions Tab */
@@ -207,22 +221,23 @@ ul li {
 
 /* home Container */
 
+
+
+
 .home-con {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 90%;
+  width: 350px;
   padding: 10px;
+  margin-top: 400px;
   align-content: center;
 }
 
-.home-con li {
-  line-height: .1em;
-}
-
-.home-con li {
-  background: white;
+.home-con   li {
+  line-height: 1.5em;
+  text-decoration: none;
 }
 
 .home-con h1 {
@@ -231,6 +246,7 @@ ul li {
 
 .home-null-container {
   align-items: center;
+  align-content: center;
   justify-content: center;
   min-width: 328px;
   padding: 0 20px;
@@ -247,9 +263,7 @@ ul li {
   flex-wrap: wrap;
 }
 
-.home-con {
-  text-align: center;
-}
+
 
 .recipe-container {
   margin: 10px;
@@ -283,7 +297,7 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: gray;
+  background:#FFFFFF;
   color: black;
 }
 
@@ -317,7 +331,7 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: gray;
+  background: #FFFFFF;
   color: black;
 }
 
@@ -350,7 +364,7 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: gray;
+  background: #FFFFFF;
   color: black;
 }
 
@@ -383,7 +397,7 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: gray;
+  background: #FFFFFF;
   color: black;
 }
 
@@ -394,7 +408,7 @@ ul li {
 }
 
 .settings-tab button {
-  background: #ececec;
+  background: #FFFFFF;
   border: 1px solid black;
   color: black;
   padding: 10px 24px;
@@ -430,13 +444,7 @@ ul li {
 }
 /* 
   
-  This is the null container styles
-  
-  */
-
-.home-con {
-  text-align: center;
-}
+ 
 
 /*             */
 /* Footer nav  */
@@ -444,25 +452,20 @@ ul li {
 
 /* Nav Bar */
 .navbar {
-  background-color: gray;
-  overflow: hidden;
-  border: 1px solid black;
-  height: 60px;
-  overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
-  display: flex;
+  background-color: #FFFFFF;
+  height: 65px;
 }
 
-/* Style the buttons that are used to open navigation bar */
-.navbar button {
-  min-width: 72px;
-  height: auto;
-  display: inline-block;
-  vertical-align: top;
-  background-color: white;
-  width: 20%;
+.Btnwrapper {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 /* Change the color of buttons on hover */
@@ -471,9 +474,32 @@ ul li {
   color: black;
 }
 
-.navicon {
-  border: 1px solid black;
+..navbar button:active {
+  background-color: gray;
+  color: black;
 }
+
+/* Style the buttons that are used to open navigation bar */
+.navbar button {
+  background-color: white;
+}
+
+
+
+
+
+
+.Btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Btn h4 {
+ margin: 0 auto;
+}
+
+
 
 /* Add a color to the active/current link */
 /* .navbar button.active {

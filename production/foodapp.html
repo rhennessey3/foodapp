@@ -43,9 +43,11 @@
             <div class="home-con" id="home-con-toggle">
                 <h1>Lets get started!</h1>
                 <h3>Plan your meals for the week in 3 easy steps.</h3>
-                <p>1) Choose meals to add to your favorites.</p>
-                <p>2) Select meals in your meal plan to add to your grocery list.</p>
-                <p>3) Use your grocery list to find items to prepare for your week.</p>
+                <ul>
+                    <li>1) Choose meals to add to your favorites.</li>
+                    <li>2) Select meals in your meal plan to add to your grocery list.</li>
+                    <li>3) Use your grocery list to find items to prepare for your week.</li>
+                </ul>
             </div>
             <section class="home-search-results-container id=" hidden-results"">
                 <div class="results-list-con" id="results-list"></div>
@@ -322,25 +324,43 @@
     </div>
 
     <footer class="navbar">
-        <button class="navicon" onclick="openCon(event, 'Favorites')">
-            <img src="/icons/Svg/favorites.svg" alt="Favorites Icon">
-            <span>Favorites</span>
-        </button>
-        <button class="navicon" onclick="openCon(event, 'Meal Plan')">
-            <img src="/icons/Svg/mealPlan.svg" alt="Meal Plan Icon">
-            <span>Meal PLan</span>
-        </button>
-        <button class="navicon" onclick="openCon(event, 'Home')">
-            <img src="/icons/Svg/home.svg" alt="Home Icon">
-        </button>
-        <button class="navicon" onclick="openCon(event, 'Grocery List')">
-            <img src="/icons/Svg/grocery-list.svg" alt="Grocery List Icon">
-            <span>Grocery List</span>
-        </button>
-        <button class="nav-icon" onclick="openCon(event, 'Settings')">
-            <img src="/icons/Svg/settings.svg" alt="Settings Icon">
-            <span>Settings</span>
-        </button>
+        <div class="Btnwrapper">
+            <div class="Btn">
+                <button class="navicon" id="mpBtn" onclick="openCon(event, 'Favorites')">
+                    <img src="/icons/Svg/favorites.svg" alt="Favorites Icon">
+                    <h4>Favorites</h4>
+                </button>
+            </div>
+
+
+            <div class="Btn">
+                <button class="navicon" id="mpBtn" onclick="openCon(event, 'Meal Plan')">
+                    <img src="/icons/Svg/mealPlan.svg" alt="Meal Plan Icon">
+                    <h4>Meal Plan</h4>
+
+                </button>
+            </div>
+
+            <div class="Btn">
+                <button class="navicon" id="homeBtn" active="home-active" onclick="openCon(event, 'Home')">
+                    <img src="/icons/Svg/home.svg" alt="Home Icon">
+                </button>
+            </div>
+
+            <div class="Btn">
+                <button class="navicon" id="grocBtn" onclick="openCon(event, 'Grocery List')">
+                    <img src="/icons/Svg/grocery-list.svg" alt="Grocery List Icon">
+                    <h4>Grocery List</h4>
+                </button>
+
+            </div>
+            <div class="Btn">
+                <button class="nav-icon" id="setsBtn" onclick="openCon(event, 'Settings')">
+                    <img src="/icons/Svg/settings.svg" alt="Settings Icon">
+                    <h4>Settings</h4>
+                </button>
+            </div>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="foodapp.js"></script>
