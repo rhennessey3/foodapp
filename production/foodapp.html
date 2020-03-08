@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Foodsie App!</title>
+    <link href="foodapp.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="recipe-header hidden">
+        <div class="recipe-name">
+            <h1>Name of the recipe</h1>
+        </div>
+        <div class="recipe-img">recipe img goes here</div>
+        <div class="time-serving">
+            <p>60 minutes - 2 servings</p>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="Home" class="navcontent">
+        <header class="home-header">
+            <div class="heading">
+                <h1 id="headerheading">Home</h1>
+            </div>
+            <div class="search-wrapper">
+                <form class="search-bar" id="js-form">
+                    <input type="text" class="searchTerm" placeholder="Find a meal and add to your plan"
+                        name="search-term" id="js-search-term">
+                    <button id="search-button" type="submit" value="Search" class="searchButton">
+                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.4994 14.2292C17.5289 12.7509 18.1361 10.9821 18.1361 9.05499C18.1361 4.06558 14.0707 0.000127844 9.08126 0.000127844C4.06545 -0.0262712 0 4.03918 0 9.02859C0 14.018 4.06545 18.0835 9.05486 18.0835C10.982 18.0835 12.7771 17.4763 14.2291 16.4467L22.7824 25L25.0263 22.7561L16.4994 14.2292ZM9.05486 15.4436C5.5174 15.4436 2.6399 12.5661 2.6399 9.02859C2.6399 5.49112 5.5174 2.61363 9.05486 2.61363C12.5923 2.61363 15.4698 5.49112 15.4698 9.02859C15.4698 12.5661 12.5923 15.4436 9.05486 15.4436Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <section class="home-null-container">
+            <div class="home-con">
+                <h1>Lets get started!</h1>
+                <p>Plan your meals for the week in 3 easy steps.</p>
+                <ul>
+                    <li> 1) Choose meals to add to your favorites.</li>
+                    <li> 2) Select meals in your meal plan to add to your grocery list.</li>
+                    <li> 3) Use your grocery list to find items to prepare for your week.</li>
+                </ul>
+                <button type="button">Get Started</button>
+            </div>
+            <section class="home-search-results-container">
+                <ul id="results-list"></ul>
+            </section>
+    </div>
+    <section class="recipe-ingredients-con hidden">
+        <div class="top-tab">
+            <button class="tablinks" onclick="openTab(event, 'Ingredients')">
+                Ingredients
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Directions')">
+                Directions
+            </button>
+        </div>
+        <div id="Ingredients" class="tabcontent">
+            <ul class="ingredient">
+                <li>Ingredient</li>
+                <li>Ingredient</li>
+                <li>Ingredient</li>
+                <li>Ingredient</li>
+            </ul>
+        </div>
+
+        <div id="Directions" class="tabcontent">
+            <ol>
+                <li>
+                    Food qualities braise chicken cuts bowl through slices butternut
+                    snack. Tender meat juicy dinners. One-pot low heat plenty of time
+                    adobo fat raw soften fruit. sweet renders bone-in marrow richness
+                    kitchen, fricassee basted pork shoulder.
+                </li>
+
+                <li>
+                    Food qualities braise chicken cuts bowl through slices butternut
+                    snack. Tender meat juicy dinners. One-pot low heat plenty of time
+                    adobo fat raw soften fruit. sweet renders bone-in marrow richness
+                    kitchen, fricassee basted pork shoulder.
+                </li>
+
+                <li>
+                    Food qualities braise chicken cuts bowl through slices butternut
+                    snack. Tender meat juicy dinners. One-pot low heat plenty of time
+                    adobo fat raw soften fruit. sweet renders bone-in marrow richness
+                    kitchen, fricassee basted pork shoulder.
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+    <div id="Favorites" class="navcontent">
+        <header class="fav-header">
+            <div class="fav-heading">
+                <h1 id="headerheading">Favorites</h1>
+            </div>
+        </header>
+        <section class="favorite-container">
+            <div class="fav-con">
+                <h1>Your Favorites</h1>
+                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
+                    One-pot low heat plenty of </p>
+                <button type="button">Get Started</button>
+            </div>
+            <section class="favorites-results-container">
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="Meal Plan" class="navcontent">
+        <header class="meal-header">
+            <div class="meal-heading">
+                <h1 id="headerheading">Meals in your Plan</h1>
+            </div>
+        </header>
+        <section class="mealPlan-con">
+            <div class="meal-con">
+                <h1>Your Meal Plan</h1>
+                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
+                    One-pot low heat plenty of </p>
+                <button type="button">Get Started</button>
+            </div>
+            <section class="mealPlan-results-container">
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-photo">
+                        <img src="https://picsum.photos/100/100" alt="">
+                    </div>
+                    <h3>Ginger-lime salmon Cake Lettuce wraps & Spicy Mayo</h3>
+                </div>
+            </section>
+        </section>
+    </div>
+    <div id="Grocery List" class="navcontent">
+        <header class="grocery-header">
+            <div class="grocery-heading">
+                <h1 id="headerheading">Grocery List</h1>
+            </div>
+        </header>
+        <section class="groceryList-con">
+            <div class="meal-con">
+                <h1>Your Grocery</h1>
+                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
+                    One-pot low heat plenty of </p>
+                <button type="button">Get Started</button>
+            </div>
+            <div class="grocery-list">
+                <h3>Grocery list item header</h3>
+                <ul class="list">
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                </ul>
+
+
+                <h3>Grocery list item header</h3>
+                <ul class="list">
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                    <li>Thing to get</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="Settings" class="navcontent">
+        <header class="settings-header">
+            <button class="settablinks">
+                <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
+            </button>
+            <div class="settings-heading">
+                <h1 id="headerheading">Settings</h1>
+            </div>
+        </header>
+        <div class="settings-tab">
+            <button class="settablinks" onclick="openSet(event, 'Allergies')">
+                Allergies
+            </button>
+            <button class="settablinks" onclick="openSet(event, 'Diet')">
+                Diet
+            </button>
+            <button class="settablinks" onclick="openSet(event, 'Food Disliked')">
+                Food Disliked
+            </button>
+        </div>
+        <div id="Allergies" class="setcontent">
+            <div class="settop">
+                <h1>Also, im alergic to...</h1>
+                <p>Are you cooking for anyone with allergies?</p>
+            </div>
+            <div class="settings-tab">
+                <button class="settablinks" onclick="openSet(event, 'Allergies')">
+                    Allergies
+                </button>
+            </div>
+            <ul class="settings-list">
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+            </ul>
+        </div>
+        <div id="Diet" class="setcontent">
+            <div class="settop">
+                <h1>Are you on a special diet?</h1>
+                <p>The is a judgement free zone. :)</p>
+            </div>
+            <div class="settings-tab">
+                <button class="settablinks" onclick="openSet(event, 'Diet')">
+                    Diet
+                </button>
+            </div>
+            <ul class="settings-list">
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+            </ul>
+        </div>
+        <div id="Food Disliked" class="setcontent">
+            <div class="settop">
+                <h1>Please hold the...</h1>
+                <p>What food don't you like?</p>
+            </div>
+            <div class="settings-tab">
+                <button class="settablinks" onclick="openSet(event, 'Food Disliked')">
+                    Food Disliked
+                </button>
+            </div>
+            <ul class="settings-list">
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+                <li>Things not to get</li>
+            </ul>
+        </div>
+    </div>
+    <section class="settings-con"></section>
+    </div>
+
+    <footer class="navbar">
+        <button class="navicon" onclick="openCon(event, 'Favorites')">
+            <img src="/icons/Svg/favorites.svg" alt="Favorites Icon">
+            <span>Favorites</span>
+        </button>
+        <button class="navicon" onclick="openCon(event, 'Meal Plan')">
+            <img src="/icons/Svg/mealPlan.svg" alt="Meal Plan Icon">
+            <span>Meal PLan</span>
+        </button>
+        <button class="navicon" onclick="openCon(event, 'Home')">
+            <img src="/icons/Svg/home.svg" alt="Home Icon">
+        </button>
+        <button class="navicon" onclick="openCon(event, 'Grocery List')">
+            <img src="/icons/Svg/grocery-list.svg" alt="Grocery List Icon">
+            <span>Grocery List</span>
+        </button>
+        <button class="nav-icon" onclick="openCon(event, 'Settings')">
+            <img src="/icons/Svg/settings.svg" alt="Settings Icon">
+            <span>Settings</span>
+        </button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="foodapp.js"></script>
+</body>
+
+</html>
