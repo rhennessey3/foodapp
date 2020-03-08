@@ -1,3 +1,5 @@
+'use strict';
+
 // function openTab(evt, tabName) {
 //   var i, tabcontent, tablinks;
 //   tabcontent = document.getElementsByClassName("tabcontent");
@@ -34,7 +36,7 @@ function openCon(evt, navName) {
 }
 
 
-'use strict';
+
 
 // api search key and endpoint!
 const apiKey = 'af866e5b4803476395086df34aa5b0af';
@@ -92,11 +94,12 @@ function displayResults(obj) {
                 <div class="recipe-photo">
                     <img src="${obj.results[i].image}" alt="">
                 </div>
-                    <h3>${obj.results[i].summary.substring(0, 51) + " ..."}</h3>
+                    <h3>${obj.results[i].summary.substring(0, 61) + " ..."}</h3>
             </div>`
         )
     };
-    $('.searchResults').removeClass('hidden');
+    $('#hidden-results').removeClass('hidden');
+    $('#home-con-toggle').toggleClass('none');
 };
 
 

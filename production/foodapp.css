@@ -208,11 +208,13 @@ ul li {
 /* home Container */
 
 .home-con {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
   width: 90%;
   padding: 10px;
   align-content: center;
-
 }
 
 .home-con li {
@@ -235,7 +237,14 @@ ul li {
 }
 
 .home-search-results-container {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.results-list-con{
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .home-con {
