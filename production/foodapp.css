@@ -81,14 +81,21 @@ p{
   font-size: 16px;
 }
 
+.heading h1 {
+  padding-left:10px;
+  background-color: #ffffff;
+}
+
 .search-wrapper {
   align-items: center;
+  background-color: inherit;
 }
 
 .search-bar {
   display: flex;
   width: 100%;
   padding: 5px;
+  background-color: #FFFFFF;
 }
 
 .search-bar input {
@@ -97,21 +104,27 @@ p{
 
 button svg {
   width: 15px;
+  background-color: inherit;
 }
 
 .searchTerm {
   width: 100%;
   border-right: none;
-  
+  border-top: .5px solid  #333333;
+  border-right: none;
+  border-bottom: .5px solid  #333333;
+  border-left: .5px solid #333333;
   padding: 0 20px;
+  background-color: #FFFFFF;
   height: 26px;
-  border:1px solid white;
+  
   border-radius: 5px 0 0 5px;
   outline: none;
   color: black;
 }
 
 .searchTerm:focus {
+  
   color: #333333;
 }
 
@@ -120,6 +133,11 @@ button svg {
   height: 35px;
   border: 1px solid back;
   background: white;
+  border-top: .5px solid  #333333;
+  border-right: .5px solid  #333333;
+  border-bottom: .5px solid  #333333;
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -297,14 +315,14 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background:#FFFFFF;
-  color: black;
+  border:1 px solid green;
 }
 
 .fav-heading h1 {
   font-size: 36px;
   text-align: center;
   padding: 30px;
+  background-color: #ffffff;
 }
 
 /*  Favorite containers */
@@ -364,14 +382,13 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: #FFFFFF;
-  color: black;
 }
 
 .grocery-heading h1 {
   font-size: 36px;
   text-align: center;
   padding: 30px;
+ background-color: #FFFFFF;
 }
 /* Grocery List Container */
 
@@ -397,14 +414,13 @@ ul li {
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: #FFFFFF;
-  color: black;
 }
 
 .settings-heading h1 {
   font-size: 36px;
   text-align: center;
   padding: 30px;
+  background-color: #ffffff;
 }
 
 .settings-tab button {
@@ -465,6 +481,18 @@ ul li {
   justify-content: space-evenly;
   max-width: 700px;
   margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.Btnwrapper img {
+  background-color: #FFFFFF;
+}
+
+.Btnwrapper h4 {
+  background-color: #FFFFFF;
+}
+
+.Btn {
   background-color: #FFFFFF;
 }
 
