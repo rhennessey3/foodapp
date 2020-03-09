@@ -234,7 +234,7 @@ ul li {
   justify-content: center;
   max-width: 100%;
   height: 422px;
-  border: 1px solid orange;
+  
 }
 
 /* home Container */
@@ -287,6 +287,10 @@ ul li {
   margin: 10px;
   width: 30%;
   flex-grow: 1;
+}
+
+.recipe-container h3 {
+color: #433A3A;
 }
 
 .recipe-photo-box {

@@ -100,7 +100,7 @@ function displayResults(obj) {
         )
     };
     $('#hidden-results').removeClass('hidden');
-    $('#home-con-toggle').removeClass('home-con');
+    $('#home-con-toggle').hide();
 };
 
 
