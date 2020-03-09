@@ -72,6 +72,15 @@ p{
 .navcontent h1 {
   font-size: 16px;
 }
+
+.navcontent {
+  display:none;
+}
+
+#Home {
+  display:block;
+}
+
 .home-header {
   height: 100px;
   width: 100%;
@@ -353,14 +362,13 @@ color: #433A3A;
   height: 100px;
   width: 100%;
   padding: 5px;
-  background: #FFFFFF;
-  color: black;
 }
 
 .meal-heading h1 {
   font-size: 36px;
   text-align: center;
   padding: 30px;
+  background-color: #FFFFFF;
 }
 
 /* Meal Plan Container*/
@@ -473,6 +481,7 @@ color: #433A3A;
 /* Nav Bar */
 .navbar {
   position: fixed;
+  display:flex;
   bottom: 0;
   width: 100%;
   background-color: #FFFFFF;
@@ -498,6 +507,7 @@ color: #433A3A;
 
 .Btn {
   background-color: #FFFFFF;
+  margin: 0 5px;
 }
 
 /* Change the color of buttons on hover */

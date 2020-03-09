@@ -14,6 +14,15 @@
 //   evt.currentTarget.className += " active";
 // }
 
+// defualt screen onload.
+window.onload = () => {
+    navcontent = document.getElementsByClassName("navcontent");
+    for (i = 0; i < navcontent.length; i++) {
+        navcontent[i].style.display = "none";
+    }
+    // $("#Home").show;
+};
+
 function openCon(evt, navName) {
     // Declare all variables
     var i, navcontent, navicons;
@@ -33,6 +42,7 @@ function openCon(evt, navName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(navName).style.display = "block";
     evt.currentTarget.className += " active";
+
 }
 
 
