@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="recipe-header hidden">
+    <!-- <div class="recipe-header hidden">
         <div class="recipe-name">
             <h1>Name of the recipe</h1>
         </div>
@@ -17,7 +17,7 @@
         <div class="time-serving">
             <p>60 minutes - 2 servings</p>
         </div>
-    </header>
+    </div> -->
 
     <!-- Home Page -->
     <div id="Home" class="navcontent">
@@ -49,11 +49,22 @@
                     <li>3) Use your grocery list to find items to prepare for your week.</li>
                 </ul>
             </div>
-            <section class="home-search-results-container id=" hidden-results"">
-                <div class="results-list-con" id="results-list"></div>
+            <section class="home-search-results-container id=" hidden-results">
+                <div class="results-list-con" id="results-list">
+                    <!-- this is where the results are appended -->
+                </div>
             </section>
     </div>
-    <section class="recipe-ingredients-con hidden">
+    <section class="recipe-ingredients-con hidden" id="recipe-page">
+        <div class="recipe-header">
+            <div class="recipe-name">
+                <h1>Name of the recipe</h1>
+            </div>
+            <div class="recipe-img">recipe img goes here</div>
+            <div class="time-serving">
+                <p>60 minutes - 2 servings</p>
+            </div>
+        </div>
         <div class="top-tab">
             <button class="tablinks" onclick="openTab(event, 'Ingredients')">
                 Ingredients
@@ -354,7 +365,7 @@
 
             </div>
             <div class="Btn">
-                <button class="navicon" id="setsBtn" onclick="openCon(event, 'Settings')">
+                <button class="nav-icon" id="setsBtn" onclick="openCon(event, 'Settings')">
                     <img src="/icons/Svg/settings.svg" alt="Settings Icon">
                     <h4>Settings</h4>
                 </button>

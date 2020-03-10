@@ -1,27 +1,20 @@
 'use strict';
 
-// function openTab(evt, tabName) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(tabName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-
-// defualt screen onload.
-window.onload = () => {
-    navcontent = document.getElementsByClassName("navcontent");
-    for (i = 0; i < navcontent.length; i++) {
-        navcontent[i].style.display = "none";
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
-    // $("#Home").show;
-};
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
 
 function openCon(evt, navName) {
     // Declare all variables
@@ -36,16 +29,13 @@ function openCon(evt, navName) {
     // Get all elements with class="tablinks" and remove the class "active"
     navicons = document.getElementsByClassName("navicons");
     for (i = 0; i < navicons.length; i++) {
-        navicons[i].className = navicons[i].className.replace(" active", "");
+        navicons[i].className = navicons[i].className.replace("active", "");
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(navName).style.display = "block";
     evt.currentTarget.className += " active";
-
 }
-
-
 
 
 // api search key and endpoint!
@@ -101,8 +91,8 @@ function displayResults(obj) {
     $('#results-list').empty();
     for (let i = 0; i < obj.results.length; i++) {
         $('#results-list').append(
-            `<div class="recipe-container">
-                <div class="recipe-photo">
+            `<div class="recipe-container" id="rContainer">
+                <div class="recipe-photo" >
                     <img src="${obj.results[i].image}" alt="">
                 </div>
                     <h3>${obj.results[i].summary.substring(0, 61) + " ..."}</h3>
@@ -111,6 +101,17 @@ function displayResults(obj) {
     };
     $('#hidden-results').removeClass('hidden');
     $('#home-con-toggle').hide();
+    showRecipePage();
 };
 
+
+function showRecipePage() {
+    $('.recipe-container').click(event => {
+        console.log("the click");
+        $(".home-header").addClass("hidden")
+        $("#results-list").addClass("hidden");
+        $('.recipe-container').addClass("hidden");
+        $(".recipe-ingredients-con").toggleClass("hidden");
+    })
+}
 

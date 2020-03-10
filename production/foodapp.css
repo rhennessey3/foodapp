@@ -295,10 +295,19 @@ ul li {
   margin: 10px;
   width: 30%;
   flex-grow: 1;
+  cursor: pointer;
 }
 
 .recipe-container h3 {
 color: #433A3A;
+}
+
+.recipe-container h3 {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .recipe-photo-box {
@@ -313,13 +322,7 @@ color: #433A3A;
   border-radius: 10px;
 }
 
-.recipe-container h3 {
-  font-family: Gotham;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-}
+
 
 /* favorite Page */
 /* Favorite Header */
