@@ -113,16 +113,16 @@ function showRecipePage(obj) {
         $("#results-list").addClass("hidden");
         $('.recipe-container').addClass("hidden");
         $(".recipe-ingredients-con").toggleClass("hidden");
-        for (let i = 0; i < obj.results.length; i++){
-            if (obj.results[i].id == chosenID){
+        for (let i = 0; i < obj.results.length; i++) {
+            if (obj.results[i].id == chosenID) {
                 //render image
                 $('.recipe-img').html(`<img src="${obj.results[i].image}">`)
                 //render ingredients
 
-                for (let j = 0; j < obj.results[i].usedIngredients.length; j++){
+                for (let j = 0; j < obj.results[i].usedIngredients.length; j++) {
                     $('.ingredient').append(`<li>${obj.results[i].usedIngredients[j].original}</li>`)
                 }
-                for (let j = 0; j < obj.results[i].missedIngredients.length; j++){
+                for (let j = 0; j < obj.results[i].missedIngredients.length; j++) {
                     $('.ingredient').append(`<li>${obj.results[i].missedIngredients[j].original}</li>`)
                 }
                 //render instructions
