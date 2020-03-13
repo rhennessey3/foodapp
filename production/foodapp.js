@@ -14,7 +14,27 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+$(".navcontent").click(function () {
+    $(".set").hide();
+});
 
+$(".back").click(function () {
+    $(".set").show();
+});
+
+function openSet(evt, setName) {
+    var i, setcontent, settablinks;
+    setcontent = document.getElementsByClassName("setcontent");
+    for (i = 0; i < setcontent.length; i++) {
+        setcontent[i].style.display = "none";
+    }
+    settablinks = document.getElementsByClassName("settablinks");
+    for (i = 0; i < settablinks.length; i++) {
+        settablinks[i].className = settablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(setName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
 function openCon(evt, navName) {
     // Declare all variables

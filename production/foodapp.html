@@ -229,29 +229,36 @@
             </div>
         </section>
     </div>
-    <div id="Settings" class="navcontent">
-        <header class="settings-header">
-            <button class="settablinks">
-                <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
-            </button>
-            <div class="settings-heading">
-                <h1 id="headerheading">Settings</h1>
+    <section class="settings-con">
+        <div id="Settings" class="set navcontent">
+            <header class="settings-header">
+                <div class="settings-heading">
+                    <h1 id="headerheading">Settings</h1>
+                </div>
+            </header>
+            <div class="settings-tab">
+                <button class="settablinks" onclick="openSet(event, 'Allergies')">
+                    Allergies
+                </button>
+                <button class="settablinks" onclick="openSet(event, 'Diet')">
+                    Diet
+                </button>
+                <button class="settablinks" onclick="openSet(event, 'Food Disliked')">
+                    Food Disliked
+                </button>
             </div>
-        </header>
-        <div class="settings-tab">
-            <button class="settablinks" onclick="openSet(event, 'Allergies')">
-                Allergies
-            </button>
-            <button class="settablinks" onclick="openSet(event, 'Diet')">
-                Diet
-            </button>
-            <button class="settablinks" onclick="openSet(event, 'Food Disliked')">
-                Food Disliked
-            </button>
         </div>
-        <div id="Allergies" class="setcontent">
-            <div class="settop">
-                <h1>Also, im alergic to...</h1>
+        <div id="Allergies" class="setcontent hidden">
+            <header class="settings-header">
+                <button class="settablinks back" onclick="openSet(event, 'back')">
+                    <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
+                </button>
+                <div class="settings-heading">
+                    <h1 id="headerheading">Settings</h1>
+                </div>
+            </header>
+            <div class="settop ">
+                <h1>Also, I'm allergic to...</h1>
                 <p>Are you cooking for anyone with allergies?</p>
             </div>
             <div class="settings-tab">
@@ -268,7 +275,15 @@
                 <li>Things not to get</li>
             </ul>
         </div>
-        <div id="Diet" class="setcontent">
+        <div id="Diet" class="setcontent hidden">
+            <header class="settings-header">
+                <button class="settablinks back" onclick="openSet(event, 'back')">
+                    <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
+                </button>
+                <div class="settings-heading">
+                    <h1 id="headerheading">Settings</h1>
+                </div>
+            </header>
             <div class="settop">
                 <h1>Are you on a special diet?</h1>
                 <p>The is a judgement free zone. :)</p>
@@ -287,7 +302,15 @@
                 <li>Things not to get</li>
             </ul>
         </div>
-        <div id="Food Disliked" class="setcontent">
+        <div id="Food Disliked" class="setcontent hidden">
+            <header class="settings-header">
+                <button class="settablinks back" onclick="openSet(event, 'back')">
+                    <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
+                </button>
+                <div class="settings-heading">
+                    <h1 id="headerheading">Settings</h1>
+                </div>
+            </header>
             <div class="settop">
                 <h1>Please hold the...</h1>
                 <p>What food don't you like?</p>
@@ -306,9 +329,7 @@
                 <li>Things not to get</li>
             </ul>
         </div>
-    </div>
-    <section class="settings-con"></section>
-    </div>
+    </section>
 
     <footer class="navbar">
         <div class="Btnwrapper">
