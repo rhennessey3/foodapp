@@ -104,7 +104,7 @@ function getUserRecipeSearchResults(query, maxResults = 6) {
         .catch(err => {
             $('#js-error-message').text(`Something went wrong: ${err.message}`);
         });
-    // let recipeinfo = {responseJson}
+
 }
 
 function displayResults(obj) {

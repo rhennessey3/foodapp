@@ -13,12 +13,9 @@
   src: url('/fonts/Brandon fonts/Brandon_reg.otf')
 }
 
-
-
 div {
     font-family: myFirstFont;
 }
-
 
 * {
   font-size: 16px;
@@ -248,9 +245,6 @@ ul li {
 
 /* home Container */
 
-
-
-
 .home-con {
   display:flex;
   flex-wrap: wrap;
@@ -321,8 +315,6 @@ color: #433A3A;
   height: 100%;
   border-radius: 10px;
 }
-
-
 
 /* favorite Page */
 /* Favorite Header */
@@ -474,8 +466,6 @@ color: #433A3A;
 }
 /* 
   
- 
-
 /*             */
 /* Footer nav  */
 /*             */
@@ -528,11 +518,6 @@ color: #433A3A;
   background-color: white;
 }
 
-
-
-
-
-
 .Btn {
   display: flex;
   flex-direction: column;
@@ -542,7 +527,6 @@ color: #433A3A;
 .Btn h4 {
  margin: 0 auto;
 }
-
 
 
 /* Add a color to the active/current link */
