@@ -91,7 +91,7 @@ function displayResults(obj) {
     $('#results-list').empty();
     for (let i = 0; i < obj.results.length; i++) {
         $('#results-list').append(
-            `<div class="recipe-container" id="rContainer">
+            `<div class="recipe-container" id="${obj.results[i].id}">
                 <div class="recipe-photo" >
                     <img src="${obj.results[i].image}" alt="">
                 </div>
@@ -101,17 +101,35 @@ function displayResults(obj) {
     };
     $('#hidden-results').removeClass('hidden');
     $('#home-con-toggle').hide();
-    showRecipePage();
+    showRecipePage(obj);
 };
 
 
-function showRecipePage() {
+function showRecipePage(obj) {
     $('.recipe-container').click(event => {
-        console.log("the click");
+        let chosenID = event.currentTarget.id;
+        console.log(chosenID);
         $(".home-header").addClass("hidden")
         $("#results-list").addClass("hidden");
         $('.recipe-container').addClass("hidden");
         $(".recipe-ingredients-con").toggleClass("hidden");
+        for (let i = 0; i < obj.results.length; i++){
+            if (obj.results[i].id == chosenID){
+                //render image
+                $('.recipe-img').html(`<img src="${obj.results[i].image}">`)
+                //render ingredients
+
+                for (let j = 0; j < obj.results[i].usedIngredients.length; j++){
+                    $('.ingredient').append(`<li>${obj.results[i].usedIngredients[j].original}</li>`)
+                }
+                for (let j = 0; j < obj.results[i].missedIngredients.length; j++){
+                    $('.ingredient').append(`<li>${obj.results[i].missedIngredients[j].original}</li>`)
+                }
+                //render instructions
+                obj.results[i].analyzedInstructions[0].steps.forEach(obj => {
+                    $('#Directions').find('ol').append(`<li>${obj.step}</li>`)
+                })
+            }
+        }
     })
 }
-
