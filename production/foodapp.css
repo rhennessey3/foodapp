@@ -151,6 +151,8 @@ button svg {
 
 /* recipe Header */
 .recipe-header {
+  display: flex;
+  flex-direction: column;
   height: auto;
   align-items: center;
   width: 100%;
@@ -165,10 +167,11 @@ button svg {
   justify-content: center;
   width: 50%;
   height: 200px;
-  border: 4px solid black;
+  background-color: inherit;
 }
 .recipe-name h1 {
   font-size: 42px;
+  background-color: white;
 }
 
 /*                   */
@@ -321,16 +324,36 @@ color: #433A3A;
   line-height: 20px;
 }
 
+.recipe-name {
+  background-color: inherit;
+}
+
+.recipe-name h1 {
+  margin: 0 ;
+}
+
 .recipe-photo-box {
   width: 50%;
   height: 200px;
   border: 4px solid violet;
 }
 
-.recipe-photo img {
+.recipe-img   {
   width: 100%;
   height: 100%;
+}
+
+.recipe-img img  {
   border-radius: 10px;
+}
+
+.time-serving {
+  margin-top: 20px;
+  background-color: inherit;
+}
+
+.time-serving p {
+  background-color: inherit;
 }
 
 /* favorite Page */
