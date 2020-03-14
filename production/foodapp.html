@@ -44,9 +44,9 @@
                 <h1>Lets get started!</h1>
                 <h3>Plan your meals for the week in 3 easy steps.</h3>
                 <ul>
-                    <li>1) Choose meals to add to your favorites.</li>
-                    <li>2) Select meals in your meal plan to add to your grocery list.</li>
-                    <li>3) Use your grocery list to find items to prepare for your week.</li>
+                    <li>1) Choose meals and add to your favorites.</li>
+                    <li>2) Add meals from favorites to your meal plan.</li>
+                    <li>3) Tap grocery list to see meal plan items</li>
                 </ul>
             </div>
             <section class="home-search-results-container id=" hidden-results">
@@ -94,8 +94,7 @@
         <section class="favorite-container">
             <div class="fav-con">
                 <h1>Your Favorites</h1>
-                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
-                    One-pot low heat plenty of </p>
+                <p>This is where your favorite recipes go. Dont see any? hit the heart button to add them here. </p>
                 <button type="button">Get Started</button>
             </div>
             <section class="favorites-results-container">
@@ -148,8 +147,8 @@
         <section class="mealPlan-con">
             <div class="meal-con">
                 <h1>Your Meal Plan</h1>
-                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
-                    One-pot low heat plenty of </p>
+                <p>This area is for the meals you plan to cook. It looks like you havnt added any from your favorites.
+                    Go to your favorites and select the plus sign. </p>
                 <button type="button">Get Started</button>
             </div>
             <section class="mealPlan-results-container">
@@ -201,9 +200,8 @@
         <section class="groceryList-con">
             <div class="meal-con">
                 <h1>Your Grocery</h1>
-                <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners.
-                    One-pot low heat plenty of </p>
-                <button type="button">Get Started</button>
+                <p>This is where your list of items for the week will be. To get started tap the home button and search
+                    for tasties.</p>
             </div>
             <div class="grocery-list">
                 <h3>Grocery list item header</h3>
@@ -259,15 +257,34 @@
                 <h1>Also, I'm allergic to...</h1>
                 <p>Are you cooking for anyone with allergies?</p>
             </div>
-
-            <ul class="settings-list">
-                <li>Things not to get</li>
-                <li>Things not to get</li>
-                <li>Things not to get</li>
-                <li>Things not to get</li>
-                <li>Things not to get</li>
-                <li>Things not to get</li>
-            </ul>
+            <div class="allergies-form">
+                <form action="">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Eggs</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Dairy</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Gluten</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Grain</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Peanuts</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Seafood</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Sesame</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Shellfish</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Soy</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Sulfite</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Tree Nut</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Wheat</label>
+                </form>
+            </div>
         </div>
         <div id="Diet" class="setcontent hidden">
             <header class="settings-header">
