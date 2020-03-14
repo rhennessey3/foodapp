@@ -125,6 +125,7 @@ function displayResults(obj) {
 };
 
 
+
 function showRecipePage(obj) {
     $('.recipe-container').click(event => {
         let chosenID = event.currentTarget.id;
@@ -152,4 +153,11 @@ function showRecipePage(obj) {
             }
         }
     })
-}
+} 
+
+$('.toHome').on('click', event => {
+    $(".home-header").toggleClass("hidden")
+    $("#results-list").toggleClass("hidden");
+    $('.recipe-container').toggleClass("hidden");
+    $(".recipe-ingredients-con").toggleClass("hidden");
+})
