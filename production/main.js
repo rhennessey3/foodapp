@@ -125,6 +125,7 @@ function displayResults(obj) {
 };
 
 
+
 function showRecipePage(obj) {
     $('.recipe-container').click(event => {
         let chosenID = event.currentTarget.id;
