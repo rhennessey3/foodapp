@@ -1,21 +1,21 @@
 @font-face {
   font-family: Brandon bld;
-  src: url('/fonts/Brandon fonts/Brandon_bld.otf')  format('truetype');
- 
+  /* src: url('/fonts/Brandon fonts/Brandon_bld.otf')  format('truetype'); */
+  src: url('/foodapp/blob/master/fonts/Brandon%20fonts/Brandon_bld.otf') format('truetype');
 }
 @font-face {
   font-family:Gotham Medium;
-  src: url('/fonts/Gotham fonts/Gotham\ Medium.otf')
+  /* src: url('/fonts/Gotham fonts/Gotham\ Medium.otf') */
+  src: url('/foodapp/blob/master/fonts/Gotham%20fonts/Gotham%20Medium.otf')
 }
 
 @font-face {
   font-family:Brandon reg;
-  src: url('/fonts/Brandon fonts/Brandon_reg.otf')
+  /* src: url('/fonts/Brandon fonts/Brandon_reg.otf') */
+  src: url('/foodapp/blob/master/fonts/Brandon%20fonts/Brandon_reg.otf')
 }
 
-div {
-    font-family: myFirstFont;
-}
+
 
 * {
   font-size: 16px;
