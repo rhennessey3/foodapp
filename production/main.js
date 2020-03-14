@@ -139,6 +139,10 @@ function showRecipePage(obj) {
                 $('.recipe-img').html(`<img src="${obj.results[i].image}">`)
                 //render ingredients
 
+                $(".recipe-name").html(`<h3>${obj.results[i].title}</h3>`)
+
+                $(".serving").html(`<p> <span class="servings">servings: ${obj.results[i].servings}</span> <span class="cooktime"> cooktime: ${obj.results[i].preparationMinutes + obj.results[i].cookingMinutes}</span></p>`)
+
                 for (let j = 0; j < obj.results[i].usedIngredients.length; j++) {
                     $('.ingredient').append(`<li>${obj.results[i].usedIngredients[j].original}</li>`)
                 }
@@ -153,3 +157,10 @@ function showRecipePage(obj) {
         }
     })
 }
+
+$('.toHome').on('click', event => {
+    $(".home-header").toggleClass("hidden")
+    $("#results-list").toggleClass("hidden");
+    $('.recipe-container').toggleClass("hidden");
+    $(".recipe-ingredients-con").toggleClass("hidden");
+})

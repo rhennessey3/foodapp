@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Foodsie App!</title>
-    <link href="foodapp.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -48,15 +48,15 @@
     </div>
     <section class="recipe-ingredients-con hidden" id="recipe-page">
         <div class="recipe-header">
-            <button class="settablinks back" onclick="openSet(event, 'back')">
+            <button class="toHome">
                 <img src="/icons/Svg/Back button.svg" alt="Back Button Icon">
             </button>
             <div class="recipe-name">
                 <h1>Name of the recipe</h1>
             </div>
             <div class="recipe-img">recipe img goes here</div>
-            <div class="time-serving">
-                <p>60 minutes - 2 servings</p>
+            <div class="serving">
+                <!-- where servings go -->
             </div>
         </div>
         <div class="top-tab">
@@ -367,7 +367,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="foodapp.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
