@@ -15,6 +15,9 @@
   src: url('/foodapp/blob/master/fonts/Brandon%20fonts/Brandon_reg.otf')
 }
 
+body {
+  margin-bottom:65px;
+}
 
 
 * {
@@ -509,10 +512,6 @@ color: #433A3A;
 font-family:Gotham Medium ;
 }
 
-
-
-/* 
-  
 /*             */
 /* Footer nav  */
 /*             */
@@ -552,7 +551,6 @@ font-family:Gotham Medium ;
   background-color:inherit;
   margin: 0 5px;
 }
-
 
 /* Style the buttons that are used to open navigation bar */
 .navbar button {
