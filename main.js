@@ -14,6 +14,14 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+$(".Btn").click(function () {
+    $(".recipe-ingredients-con").hide();
+});
+$(".home").click(function () {
+    $(".recipe-ingredients-con").show();
+});
+
+
 $(".navcontent").click(function () {
     $(".set").hide();
 });
