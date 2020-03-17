@@ -63,6 +63,12 @@ function openCon(evt, navName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(navName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    for (i = 0; i < 5; i++) {
+        $("#btn" + i).closest("button").prop("disabled", false);
+    }
+    $(evt.currentTarget).prop("disabled", true);
+
 }
 
 
